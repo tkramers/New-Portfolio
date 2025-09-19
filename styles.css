@@ -1,0 +1,225 @@
+/* Import Poppins Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: ##FFFFFF;
+    color: #333;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    /* background: #004c97; */
+    /* - Z */
+    background-image: linear-gradient(to bottom, #004c97, #6fb7ff);
+    color: white;
+    padding: 30px 20px;
+}
+
+header h1 {
+    font-family: 'Poppins', sans-serif;
+    margin: 10px 0;
+    font-size: 2.5rem;
+}
+
+header img {
+    margin-top: 15px;
+}
+
+header p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Profile Photo - Z */
+
+.profile-pic {
+    border-radius: 20px;
+    box-shadow: 1px 10px 30px white;
+}
+
+/* Navigation */
+nav {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    /* background: #003366; */
+    /* - Z */
+    background-image: linear-gradient(to bottom, #346ea7, #004c97);
+    padding: 15px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+/* Sections */
+section {
+    width: 80%;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h2 {
+    color: #004c97;
+    /* border-bottom: 3px solid #ffcc00; */
+    /* border-bottom: linear-gradient(to right, #004c97, #6fb7ff); */
+    border-bottom: 3px solid; /* Set width and style */
+    border-image: linear-gradient(to right, #004c97, #6fb7ff) 1;
+    padding-bottom: 10px;
+}
+
+.about-me-header {
+    font-size: 2rem;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* Experience Section */
+.experience-item {
+    border: 2px solid #6ea6eb;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background-color: #f4faff;
+}
+
+h3 {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Education Section */
+#education .education-item {
+    border: 2px solid #6ea6eb;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background-color: #f4faff;
+}
+
+#education h3 {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#education p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.subtext {
+    font-size: 0.9em; /* Makes the text slightly smaller */
+    color: #555; /* Optional: Slightly lighter text for subtlety */
+    margin-top: -8px; /* Adjust spacing */
+}
+
+.date {
+    float: right;
+    font-weight: normal;
+    color: #555;
+}
+
+
+/* Projects */
+.project iframe {
+    border: none;
+    border-radius: 10px;
+}
+
+/* Contact Section */
+#contact {
+    text-align: center;
+    padding: 40px;
+}
+
+#contact h2 {
+    font-size: 2rem;
+    color: #004c97;
+}
+
+#contact p {
+    font-size: 1.1rem;
+}
+
+.contact-links {
+    margin-top: 20px;
+}
+
+.contact-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+/* .email-btn {
+    background-color: #ff6b6b;
+} */
+
+.email-btn {
+    background-color: #4095eb;
+    color: white;
+} 
+
+.linkedin-btn {
+    background-color: #0077b5;
+}
+
+.contact-btn i {
+    margin-right: 8px;
+}
+
+.contact-btn:hover {
+    opacity: 0.8;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    /* background: #004c97; */
+    /* - Z */
+    background-image: linear-gradient(to bottom, #6fb7ff, #004c97);
+    color: white;
+    margin-top: 100px;
+}
