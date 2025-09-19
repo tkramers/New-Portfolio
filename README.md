@@ -1,3 +1,3 @@
 # Resume-Portfolio
 
-https://tkramers.github.io/Resume-Portfolio/
+https://tkramers.github.io/New-Portfolio/
