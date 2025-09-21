@@ -1,4 +1,4 @@
 # Resume-Portfolio
 
 
-https://tkramers.github.io/New-Portfoli/
+https://tkramers.github.io/New-Portfolio/
