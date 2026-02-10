@@ -205,6 +205,11 @@ ul {
     background-color: #0077b5;
 }
 
+.tripleten-btn {
+    background-color: #66b7e1;
+    color: white;
+}
+
 .contact-btn i {
     margin-right: 8px;
 }
