@@ -1,3 +1,4 @@
+```css
 /* Import Poppins Font */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
@@ -245,6 +246,59 @@ section {
   margin-top: 6px;
 }
 
+/* ============================= */
+/* Skills, Tools & Certifications */
+/* ============================= */
+
+#skills-tools .skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+/* Card styling to match your experience/education boxes */
+#skills-tools .skill-category {
+  border: 2px solid #6ea6eb;
+  background-color: #f4faff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+#skills-tools .skill-category h3 {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+#skills-tools .skill-category p {
+  margin: 0;
+}
+
+/* Certifications image grid */
+#skills-tools .cert-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+#skills-tools .cert-images img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#skills-tools .cert-images img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* Make the clickable image links not show underline */
+#skills-tools .cert-images a {
+  text-decoration: none;
+}
+
 /* Footer */
 footer {
   text-align: center;
@@ -253,3 +307,4 @@ footer {
   color: white;
   margin-top: 100px;
 }
+```
