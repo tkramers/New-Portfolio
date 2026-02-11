@@ -227,4 +227,47 @@ footer {
     background-image: linear-gradient(to bottom, #6fb7ff, #004c97);
     color: white;
     margin-top: 100px;
+
+
+    /* Updates Page */
+.updates-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.update-item {
+    border: 2px solid #6ea6eb;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f4faff;
+}
+
+.update-item h3 {
+    margin-top: 0;
+    color: #004c97;
+    font-size: 1.4rem;
+}
+
+.update-date {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.update-tags {
+    margin-top: 10px;
+}
+
+.update-tag {
+    display: inline-block;
+    background-color: #e6f1ff;
+    color: #004c97;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    margin-right: 6px;
+    margin-top: 6px;
+}
+
 }
