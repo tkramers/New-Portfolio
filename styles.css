@@ -102,7 +102,7 @@ section {
   padding: 40px 30px;
 }
 
-/* Optional: make it responsive so it doesn't feel tight on mobile */
+/* Responsive section sizing */
 @media (max-width: 768px) {
   section {
     width: 92%;
@@ -223,14 +223,13 @@ section {
   opacity: 0.8;
 }
 
-/* Updates Page (match Experience look) */
+/* Updates Page */
 .updates-container {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-/* Make update cards match .experience-item */
 .update-item {
   border: 2px solid #6ea6eb;
   padding: 20px;
@@ -238,18 +237,11 @@ section {
   background-color: #f4faff;
 }
 
-/* Match Experience title style */
 .update-item h3 {
   color: #333;
   font-size: 1.5em;
   margin-bottom: 10px;
   margin-top: 0;
-}
-
-.update-date {
-  font-size: 0.9rem;
-  color: #555;
-  margin-bottom: 10px;
 }
 
 .update-tags {
@@ -267,6 +259,32 @@ section {
   margin-top: 6px;
 }
 
+/* ✅ Updates page photo grid (scoped so it doesn't affect home page images) */
+.update-photos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.update-photos img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+
+/* Mobile stacking for updates photos */
+@media (max-width: 768px) {
+  .update-photos {
+    grid-template-columns: 1fr;
+  }
+
+  .update-photos img {
+    height: 220px;
+  }
+}
 
 /* ============================= */
 /* Skills, Tools & Certifications */
@@ -279,7 +297,6 @@ section {
   margin-top: 1.5rem;
 }
 
-/* Card styling to match your experience/education boxes */
 #skills-tools .skill-category {
   border: 2px solid #6ea6eb;
   background-color: #f4faff;
@@ -287,12 +304,10 @@ section {
   border-radius: 8px;
 }
 
-/* ✅ Make Certifications card span the full width of the grid */
 #skills-tools .skill-category.certifications {
   grid-column: 1 / -1;
 }
 
-/* Headings inside skill cards */
 #skills-tools .skill-category h3 {
   margin-top: 0;
   font-size: 1.2rem;
@@ -302,7 +317,6 @@ section {
   margin: 0;
 }
 
-/* Certifications grid (inside the certifications card) */
 #skills-tools .cert-images {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -310,7 +324,6 @@ section {
   margin-top: 1.25rem;
 }
 
-/* Each certification "card" (image + title) */
 #skills-tools .cert-card {
   text-align: center;
 }
@@ -334,7 +347,6 @@ section {
   line-height: 1.4;
 }
 
-/* Make the clickable image links not show underline */
 #skills-tools .cert-images a {
   text-decoration: none;
 }
