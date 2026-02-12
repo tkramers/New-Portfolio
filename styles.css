@@ -267,21 +267,6 @@ section {
   margin-top: 6px;
 }
 
-.update-photos {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
-  margin-top: 15px;
-}
-
-.update-photos img {
-  width: 100%;
-  height: 180px;        /* force same height */
-  object-fit: cover;   /* crops instead of stretching */
-  border-radius: 10px;
-  display: block;
-}
-
 
 /* ============================= */
 /* Skills, Tools & Certifications */
