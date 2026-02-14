@@ -94,6 +94,17 @@ section {
   border-radius: 10px;
 }
 
+/* Center About Me section text */
+#about {
+  text-align: center;
+}
+
+#about-me p {
+  max-width: 750px;   /* keeps text readable */
+  margin: 0 auto;    /* centers the paragraph block */
+  line-height: 1.7;
+}
+
 /* Make Skills/Tools section wider than other sections */
 #skills-tools {
   width: 100%;
