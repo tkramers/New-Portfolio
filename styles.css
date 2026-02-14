@@ -267,24 +267,24 @@ section {
   margin-top: 15px;
 }
 
-/* Clickable photo tiles */
+/* Square clickable photo tiles */
 .update-photos a {
   position: relative;
   display: block;
   border-radius: 10px;
   overflow: hidden;
+  aspect-ratio: 1 / 1;   /* forces square tiles */
 }
 
 .update-photos img {
   width: 100%;
-  height: 100px;        /* smaller */
-  object-fit: cover;
+  height: 100%;
+  object-fit: cover;    /* crops nicely */
   border-radius: 10px;
   display: block;
   cursor: zoom-in;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-
 
 .update-photos a:hover img {
   transform: scale(1.03);
@@ -315,10 +315,6 @@ section {
 @media (max-width: 768px) {
   .update-photos {
     grid-template-columns: 1fr;
-  }
-
-  .update-photos img {
-    height: 220px;
   }
 }
 
