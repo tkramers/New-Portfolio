@@ -164,6 +164,17 @@ section {
   color: #555;
 }
 
+.update-photos a img {
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.update-photos a img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+
 /* Projects */
 .project iframe {
   border: none;
