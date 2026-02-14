@@ -262,10 +262,13 @@ section {
 /* Updates page photo grid (clean vertical layout) */
 .update-photos {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
-  margin-top: 15px;
+  grid-template-columns: repeat(3, 1fr);  /* smaller squares */
+  gap: 16px;                              /* more space between photos */
+  margin-top: 40px;                      /* bigger break from text */
+  padding-top: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
 }
+
 
 /* Square clickable photo tiles */
 .update-photos a {
