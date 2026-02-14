@@ -84,27 +84,32 @@ nav a:hover {
   color: #ffcc00;
 }
 
-/* Sections */
+/* Sections (RESET to normal so pages aren't messed up) */
 section {
-  width: 98%;          /* makes it wider */
-  max-width: 1400px;  /* prevents it from being too wide on large screens */
+  width: 80%;
   margin: 40px auto;
-  padding: 40px;      /* a little more breathing room inside */
+  padding: 20px;
   background: white;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 14px;
+  border-radius: 10px;
 }
 
-
-/* Center About Me section text */
+/* About Me ONLY: make this one wider + centered text */
 #about {
+  width: 92%;
+  max-width: 1200px;
+  margin: 40px auto;
   text-align: center;
 }
 
 #about-me p {
-  max-width: 750px;   /* keeps text readable */
-  margin: 0 auto;    /* centers the paragraph block */
+  max-width: 750px;
+  margin: 0 auto;
   line-height: 1.7;
+}
+
+.about-me-header {
+  font-size: 2rem;
 }
 
 /* Make Skills/Tools section wider than other sections */
@@ -123,14 +128,15 @@ section {
     padding: 18px;
   }
 
+  #about {
+    width: 92%;
+    padding: 18px;
+  }
+
   #skills-tools {
     width: 92%;
     padding: 28px 18px;
   }
-}
-
-.about-me-header {
-  font-size: 2rem;
 }
 
 /* Experience Section */
@@ -272,16 +278,16 @@ section {
   margin-top: 6px;
 }
 
+/* Updates photos: centered rows + centered last row */
 .update-photos {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 120px); /* tile size (make smaller/bigger here) */
-  justify-content: center;                        /* centers each row, including the last */
+  grid-template-columns: repeat(auto-fit, 120px); /* tile size */
+  justify-content: center;                        /* centers each row including last */
   gap: 16px;
   margin-top: 40px;
   padding-top: 20px;
   border-top: 1px solid rgba(0, 0, 0, 0.08);
 }
-
 
 /* Square clickable photo tiles */
 .update-photos a {
@@ -289,10 +295,9 @@ section {
   display: block;
   border-radius: 10px;
   overflow: hidden;
-  aspect-ratio: 1 / 1; /* square tiles */
+  aspect-ratio: 1 / 1;
 }
 
-/* Fill the square */
 .update-photos img {
   width: 100%;
   height: 100%;
@@ -308,7 +313,6 @@ section {
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
 }
 
-/* Hover overlay */
 .update-photos a::after {
   content: "Click to view";
   position: absolute;
@@ -328,11 +332,9 @@ section {
   opacity: 1;
 }
 
-
-/* Mobile stacking */
 @media (max-width: 768px) {
   .update-photos {
-    grid-template-columns: repeat(2, 1fr); /* nicer on phones than 1 huge column */
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -354,10 +356,6 @@ section {
   border-radius: 8px;
 }
 
-#skills-tools .skill-category.certifications {
-  grid-column: 1 / -1;
-}
-
 #skills-tools .skill-category h3 {
   margin-top: 0;
   font-size: 1.2rem;
@@ -367,28 +365,20 @@ section {
   margin: 0;
 }
 
-/* ✅ Certifications: centered rows + centered last row */
+/* Certifications: centered rows + centered last row */
 #skills-tools .cert-images {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;   /* centers every row */
+  justify-content: center;
   gap: 1.5rem;
   margin-top: 1.25rem;
-}
-
-#skills-tools .cert-card {
-  width: 260px;              /* adjust: 240–300px */
-  text-align: center;
-}
-
-
-  justify-content: center;   /* centers rows */
-  max-width: 1100px;         /* keeps rows centered nicely */
+  max-width: 1100px;
   margin-left: auto;
   margin-right: auto;
 }
 
 #skills-tools .cert-card {
+  width: 260px;
   text-align: center;
 }
 
