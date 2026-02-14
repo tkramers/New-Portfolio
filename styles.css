@@ -259,15 +259,16 @@ section {
   margin-top: 6px;
 }
 
-/* ✅ Updates page photo grid: 4 on top, 3 centered on bottom */
 .update-photos {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 across */
-  gap: 16px; /* space between photos */
-  margin-top: 40px; /* bigger break from text */
+  grid-template-columns: repeat(auto-fit, 120px); /* tile size (make smaller/bigger here) */
+  justify-content: center;                        /* centers each row, including the last */
+  gap: 16px;
+  margin-top: 40px;
   padding-top: 20px;
   border-top: 1px solid rgba(0, 0, 0, 0.08);
 }
+
 
 /* Square clickable photo tiles */
 .update-photos a {
@@ -313,11 +314,6 @@ section {
 .update-photos a:hover::after {
   opacity: 1;
 }
-
-/* Center the 3 photos on the second row (for 7 total photos) */
-.update-photos a:nth-child(5) { grid-column: 2; }
-.update-photos a:nth-child(6) { grid-column: 3; }
-.update-photos a:nth-child(7) { grid-column: 4; }
 
 
 /* Mobile stacking */
