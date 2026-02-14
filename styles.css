@@ -314,10 +314,11 @@ section {
   opacity: 1;
 }
 
-/* ✅ Center the 3 photos on the second row (for 7 total photos) */
+/* Center the 3 photos on the second row (for 7 total photos) */
 .update-photos a:nth-child(5) { grid-column: 2; }
 .update-photos a:nth-child(6) { grid-column: 3; }
 .update-photos a:nth-child(7) { grid-column: 4; }
+
 
 /* Mobile stacking */
 @media (max-width: 768px) {
