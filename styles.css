@@ -262,7 +262,7 @@ section {
 /* Updates page photo grid (smaller squares + more space from text) */
 .update-photos {
   display: grid;
-  grid-template-columns: repeat(8, 1fr); /* smaller squares */
+  grid-template-columns: repeat(10, 1fr); /* smaller squares */
   gap: 16px; /* more space between photos */
   margin-top: 40px; /* bigger break from text */
   padding-top: 20px;
