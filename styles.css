@@ -259,11 +259,11 @@ section {
   margin-top: 6px;
 }
 
-/* Updates page photo grid (smaller squares + more space from text) */
+/* ✅ Updates page photo grid: 4 on top, 3 centered on bottom */
 .update-photos {
   display: grid;
-  grid-template-columns: repeat(12, 1fr); /* smaller squares */
-  gap: 16px; /* more space between photos */
+  grid-template-columns: repeat(4, 1fr); /* 4 across */
+  gap: 16px; /* space between photos */
   margin-top: 40px; /* bigger break from text */
   padding-top: 20px;
   border-top: 1px solid rgba(0, 0, 0, 0.08);
@@ -275,13 +275,14 @@ section {
   display: block;
   border-radius: 10px;
   overflow: hidden;
-  aspect-ratio: 1 / 1; /* forces square tiles */
+  aspect-ratio: 1 / 1; /* square tiles */
 }
 
+/* Fill the square */
 .update-photos img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* crops nicely */
+  object-fit: cover;
   border-radius: 10px;
   display: block;
   cursor: zoom-in;
@@ -313,10 +314,15 @@ section {
   opacity: 1;
 }
 
+/* ✅ Center the 3 photos on the second row (for 7 total photos) */
+.update-photos a:nth-child(5) { grid-column: 2; }
+.update-photos a:nth-child(6) { grid-column: 3; }
+.update-photos a:nth-child(7) { grid-column: 4; }
+
 /* Mobile stacking */
 @media (max-width: 768px) {
   .update-photos {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr); /* nicer on phones than 1 huge column */
   }
 }
 
