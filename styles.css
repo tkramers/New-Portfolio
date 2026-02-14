@@ -174,6 +174,31 @@ section {
   box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 }
 
+.update-photos a {
+  position: relative;
+  display: inline-block;
+}
+
+.update-photos a::after {
+  content: "View full photo";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  transition: opacity 0.2s ease;
+}
+
+.update-photos a:hover::after {
+  opacity: 1;
+}
+
+
 
 /* Projects */
 .project iframe {
