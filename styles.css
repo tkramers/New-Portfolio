@@ -164,42 +164,6 @@ section {
   color: #555;
 }
 
-.update-photos a img {
-  cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.update-photos a img:hover {
-  transform: scale(1.02);
-  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
-}
-
-.update-photos a {
-  position: relative;
-  display: inline-block;
-}
-
-.update-photos a::after {
-  content: "View full photo";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.45);
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  border-radius: 12px;
-  font-size: 0.9rem;
-  transition: opacity 0.2s ease;
-}
-
-.update-photos a:hover::after {
-  opacity: 1;
-}
-
-
-
 /* Projects */
 .project iframe {
   border: none;
@@ -295,11 +259,12 @@ section {
   margin-top: 6px;
 }
 
+/* Lightbox (if you decide to use it later) */
 .lightbox {
   display: none;
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.85);
+  background: rgba(0, 0, 0, 0.85);
   justify-content: center;
   align-items: center;
   z-index: 9999;
@@ -312,7 +277,6 @@ section {
   border-radius: 12px;
 }
 
-
 /* ✅ Updates page photo grid (scoped so it doesn't affect home page images) */
 .update-photos {
   display: grid;
@@ -321,12 +285,58 @@ section {
   margin-top: 15px;
 }
 
+/* Cute helper text above photo grid */
+.photo-hint {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin: 10px 0 12px;
+  font-style: italic;
+}
+
+/* Make each thumbnail link behave like a tile */
+.update-photos a {
+  position: relative;
+  display: block;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Thumbnail image behavior */
 .update-photos img {
   width: 100%;
   height: 180px;
   object-fit: cover;
   border-radius: 10px;
   display: block;
+  cursor: zoom-in;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Slight zoom + shadow on hover */
+.update-photos a:hover img {
+  transform: scale(1.03);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+/* Overlay label */
+.update-photos a::after {
+  content: "Click to view";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: opacity 0.2s ease;
+}
+
+/* Show overlay on hover */
+.update-photos a:hover::after {
+  opacity: 1;
 }
 
 /* Mobile stacking for updates photos */
