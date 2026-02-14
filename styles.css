@@ -259,33 +259,15 @@ section {
   margin-top: 6px;
 }
 
-/* Lightbox (if you decide to use it later) */
-.lightbox {
-  display: none;
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.85);
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-  cursor: zoom-out;
-}
-
-.lightbox img {
-  max-width: 90%;
-  max-height: 90%;
-  border-radius: 12px;
-}
-
-/* ✅ Updates page photo grid (scoped so it doesn't affect home page images) */
+/* Updates page photo grid (vertical + smaller) */
 .update-photos {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
+  grid-template-columns: repeat(2, 1fr); /* vertical layout */
+  gap: 10px;
   margin-top: 15px;
 }
 
-/* Cute helper text above photo grid */
+/* Photo hint text */
 .photo-hint {
   font-size: 0.9rem;
   color: #6b7280;
@@ -293,7 +275,7 @@ section {
   font-style: italic;
 }
 
-/* Make each thumbnail link behave like a tile */
+/* Clickable photo tiles */
 .update-photos a {
   position: relative;
   display: block;
@@ -301,21 +283,20 @@ section {
   overflow: hidden;
 }
 
-/* Thumbnail image behavior */
 .update-photos img {
   width: 100%;
-  height: 180px;
+  height: 130px; /* smaller images */
   object-fit: cover;
   border-radius: 10px;
   display: block;
   cursor: zoom-in;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
 }
 
-/* Slight zoom + shadow on hover */
 .update-photos a:hover img {
   transform: scale(1.03);
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+  opacity: 1;
 }
 
 /* Overlay label */
@@ -334,19 +315,29 @@ section {
   transition: opacity 0.2s ease;
 }
 
-/* Show overlay on hover */
 .update-photos a:hover::after {
   opacity: 1;
 }
 
-/* Mobile stacking for updates photos */
+/* Center the last photo if it's alone */
+.update-photos a:last-child {
+  grid-column: 1 / -1;
+  max-width: 60%;
+  justify-self: center;
+}
+
+/* Mobile stacking */
 @media (max-width: 768px) {
   .update-photos {
     grid-template-columns: 1fr;
   }
 
   .update-photos img {
-    height: 220px;
+    height: 200px;
+  }
+
+  .update-photos a:last-child {
+    max-width: 100%;
   }
 }
 
