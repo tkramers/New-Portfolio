@@ -87,7 +87,7 @@ nav a:hover {
 /* Sections */
 section {
   width: 98%;          /* makes it wider */
-  max-width: 1200px;  /* prevents it from being too wide on large screens */
+  max-width: 1500px;  /* prevents it from being too wide on large screens */
   margin: 40px auto;
   padding: 40px;      /* a little more breathing room inside */
   background: white;
