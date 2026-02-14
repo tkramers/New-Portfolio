@@ -86,13 +86,15 @@ nav a:hover {
 
 /* Sections */
 section {
-  width: 80%;
+  width: 92%;          /* makes it wider */
+  max-width: 1200px;  /* prevents it from being too wide on large screens */
   margin: 40px auto;
-  padding: 20px;
+  padding: 40px;      /* a little more breathing room inside */
   background: white;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+  border-radius: 14px;
 }
+
 
 /* Center About Me section text */
 #about {
