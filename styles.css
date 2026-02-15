@@ -1,210 +1,210 @@
 /* Import Poppins Font */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"); /* Loads the Poppins font family from Google Fonts */
 
 /* ========================= */
 /* General Styles */
 /* ========================= */
-html {
-  scroll-behavior: smooth;
+html { /* Targets the root HTML element */
+  scroll-behavior: smooth; /* Enables smooth scrolling for anchor links */
 }
 
-body {
-  font-family: "Poppins", sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #ffffff;
-  color: #333;
+body { /* Targets the entire page body */
+  font-family: "Poppins", sans-serif; /* Sets the global font to Poppins (fallback to sans-serif) */
+  margin: 0; /* Removes default browser margin */
+  padding: 0; /* Removes default browser padding */
+  background-color: #ffffff; /* Sets page background to white */
+  color: #333; /* Sets default text color to dark gray */
 }
 
-p {
-  line-height: 1.6;
+p { /* Targets all paragraph text */
+  line-height: 1.6; /* Sets paragraph line spacing for readability */
 }
 
-ul {
-  list-style-type: disc;
-  margin-left: 20px;
+ul { /* Targets all unordered lists */
+  list-style-type: disc; /* Uses standard bullet points */
+  margin-left: 20px; /* Indents list from the left */
 }
 
-h2 {
-  color: #004c97;
-  border-bottom: 3px solid;
-  border-image: linear-gradient(to right, #004c97, #6fb7ff) 1;
-  padding-bottom: 10px;
+h2 { /* Targets all h2 headings */
+  color: #004c97; /* Sets heading color (blue) */
+  border-bottom: 3px solid; /* Adds a 3px bottom border */
+  border-image: linear-gradient(to right, #004c97, #6fb7ff) 1; /* Makes the bottom border a gradient */
+  padding-bottom: 10px; /* Adds space between text and border */
 }
 
-h3 {
-  color: #333;
-  font-size: 1.5em;
-  margin-bottom: 10px;
+h3 { /* Targets all h3 headings */
+  color: #333; /* Sets heading text color */
+  font-size: 1.5em; /* Sets heading size relative to base font */
+  margin-bottom: 10px; /* Adds spacing below the heading */
 }
 
 /* ========================= */
 /* Header */
 /* ========================= */
-header {
-  text-align: center;
-  background-image: linear-gradient(to bottom, #004c97, #6fb7ff);
-  color: white;
-  padding: 30px 20px;
+header { /* Targets the header section */
+  text-align: center; /* Centers header content */
+  background-image: linear-gradient(to bottom, #004c97, #6fb7ff); /* Applies a blue gradient background */
+  color: white; /* Makes header text white */
+  padding: 30px 20px; /* Adds vertical/horizontal padding inside header */
 }
 
-header h1 {
-  margin: 10px 0;
-  font-size: 2.5rem;
+header h1 { /* Targets the h1 inside the header */
+  margin: 10px 0; /* Adds vertical margin and removes horizontal margin */
+  font-size: 2.5rem; /* Sets large font size for name/title */
 }
 
-header img {
-  margin-top: 15px;
+header img { /* Targets images inside the header */
+  margin-top: 15px; /* Adds spacing above the image */
 }
 
-header p {
-  font-size: 1.2rem;
-  font-weight: bold;
+header p { /* Targets paragraph text inside the header */
+  font-size: 1.2rem; /* Sets subtitle size */
+  font-weight: bold; /* Makes subtitle bold */
 }
 
 /* Profile Photo */
-.profile-pic {
-  border-radius: 20px;
-  box-shadow: 1px 10px 30px white;
+.profile-pic { /* Targets elements with class="profile-pic" */
+  border-radius: 20px; /* Rounds the photo corners */
+  box-shadow: 1px 10px 30px white; /* Adds a white glow-like shadow */
 }
 
 /* ========================= */
 /* Navigation */
 /* ========================= */
-nav {
-  position: relative;
-  z-index: 9999;
-  text-align: center;
-  background-image: linear-gradient(to bottom, #346ea7, #004c97);
-  padding: 15px 0;
+nav { /* Targets the navigation bar */
+  position: relative; /* Allows z-index and positioning context */
+  z-index: 9999; /* Keeps nav layered above other elements */
+  text-align: center; /* Centers nav links */
+  background-image: linear-gradient(to bottom, #346ea7, #004c97); /* Applies gradient background to nav */
+  padding: 15px 0; /* Adds vertical padding to nav */
 }
 
-nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 20px;
-  font-size: 1.2rem;
-  font-weight: bold;
-  transition: 0.3s;
+nav a { /* Targets all links inside nav */
+  color: white; /* Sets link text color to white */
+  text-decoration: none; /* Removes underline from links */
+  margin: 0 20px; /* Adds horizontal spacing between links */
+  font-size: 1.2rem; /* Sets link text size */
+  font-weight: bold; /* Makes nav links bold */
+  transition: 0.3s; /* Smooth transition for hover effects */
 }
 
-nav a:hover {
-  color: #ffcc00;
+nav a:hover { /* Targets nav links on hover */
+  color: #ffcc00; /* Changes link color to yellow on hover */
 }
 
 /* ========================= */
 /* Sections */
 /* ========================= */
-section {
-  width: 80%;
-  margin: 40px auto;
-  padding: 20px;
-  background: white;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+section { /* Targets all section elements */
+  width: 80%; /* Makes sections 80% of the page width */
+  margin: 40px auto; /* Centers sections and adds vertical spacing */
+  padding: 20px; /* Adds inner spacing inside the section */
+  background: white; /* Sets section background color to white */
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Adds subtle drop shadow */
+  border-radius: 10px; /* Rounds section corners */
 }
 
 /* About Me ONLY (homepage section) */
 /* About Me: make the card wider */
-section#about {
-  width: calc(100% - 60px); /* full width minus side space */
-  max-width: none;
-  margin: 40px auto;
+section#about { /* Targets only the section with id="about" */
+  width: calc(100% - 60px); /* full width minus side space */ /* Makes the About section nearly full-width with 30px space on each side */
+  max-width: 1200px; /* Removes any max-width restriction */
+  margin: 40px auto; /* Centers the section with vertical spacing */
 }
 
-#about-me p {
-  max-width: 750px;
-  margin: 0 auto;
-  line-height: 1.7;
+#about-me p { /* Targets paragraphs inside the element with id="about-me" */
+  max-width: 1200px; /* Limits line length for readability */
+  margin: 0 auto; /* Centers the paragraph block */
+  line-height: 1.7; /* Adds extra line spacing */
 }
 
-.about-me-header {
-  font-size: 2rem;
+.about-me-header { /* Targets elements with class="about-me-header" */
+  font-size: 2rem; /* Sets the About heading size */
 }
 
 /* Make Skills/Tools section wider than other sections */
-#skills-tools .skill-category p {
-  font-size: 0.8rem;
-  line-height: 1.45;
+#skills-tools .skill-category p { /* Targets paragraphs inside .skill-category within #skills-tools */
+  font-size: 0.8rem; /* Makes skill text smaller */
+  line-height: 1.45; /* Sets line spacing for skill text */
 }
 
-#skills-tools .skill-category h3 {
-  font-size: 1.15rem;
+#skills-tools .skill-category h3 { /* Targets h3 headings inside .skill-category within #skills-tools */
+  font-size: 1.15rem; /* Makes the skill card heading slightly smaller */
 }
 
-#skills-tools {
-  width: 100%;
-  max-width: 1200px;
-  margin: 40px auto;
-  padding: 40px 30px;
+#skills-tools { /* Targets the section with id="skills-tools" */
+  width: 100%; /* Makes it full width of its container */
+  max-width: 1200px; /* Limits width on large screens */
+  margin: 40px auto; /* Centers the section */
+  padding: 40px 30px; /* Adds more padding inside the skills section */
 }
 
 /* Responsive section sizing */
-@media (max-width: 768px) {
-  section {
-    width: 92%;
-    margin: 25px auto;
-    padding: 18px;
+@media (max-width: 768px) { /* Applies these styles on screens 768px wide or smaller */
+  section { /* Targets all sections on small screens */
+    width: 92%; /* Makes sections wider on mobile */
+    margin: 25px auto; /* Reduces vertical spacing */
+    padding: 18px; /* Reduces padding */
   }
 
-  #about {
-    width: 92%;
-    padding: 18px;
+  #about { /* Targets #about on small screens */
+    width: 92%; /* Matches section mobile width */
+    padding: 18px; /* Adds padding inside the About section on mobile */
   }
 
-  #skills-tools {
-    width: 92%;
-    padding: 28px 18px;
+  #skills-tools { /* Targets #skills-tools on small screens */
+    width: 92%; /* Matches mobile section width */
+    padding: 28px 18px; /* Reduces padding on mobile */
   }
 }
 
 /* ========================= */
 /* Experience Section */
 /* ========================= */
-.experience-item {
-  border: 2px solid #6ea6eb;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 8px;
-  background-color: #f4faff;
+.experience-item { /* Targets each experience card/container */
+  border: 2px solid #6ea6eb; /* Adds blue border */
+  padding: 20px; /* Adds inner spacing */
+  margin-bottom: 20px; /* Adds space between experience items */
+  border-radius: 8px; /* Rounds corners */
+  background-color: #f4faff; /* Sets light blue background */
 }
 
 /* Header row inside each experience item */
-.experience-header {
-  display: flex;
-  justify-content: space-between; /* pushes logo to far right */
-  align-items: flex-start;
-  gap: 20px;
+.experience-header { /* Targets the header row inside an experience card */
+  display: flex; /* Uses flexbox for layout */
+  justify-content: space-between; /* pushes logo to far right */ /* Spreads content so logo can sit on the far right */
+  align-items: flex-start; /* Aligns items to the top */
+  gap: 20px; /* Adds space between text and logo */
 }
 
-.experience-text {
-  flex: 1;
+.experience-text { /* Targets the text container in the experience header */
+  flex: 1; /* Allows text area to take up remaining space */
 }
 
-.company-logo {
-  width: 70px; /* adjust if you want */
-  height: auto;
-  border-radius: 10px;
-  object-fit: contain;
-  flex-shrink: 0;
-  margin-left: auto; /* ensures it hugs the right edge */
+.company-logo { /* Targets the logo image */
+  width: 70px; /* adjust if you want */ /* Sets logo width */
+  height: auto; /* Keeps logo proportions */
+  border-radius: 10px; /* Rounds logo corners */
+  object-fit: contain; /* Ensures entire logo fits without cropping */
+  flex-shrink: 0; /* Prevents logo from shrinking */
+  margin-left: auto; /* ensures it hugs the right edge */ /* Pushes logo to the far right */
 }
 
 .company-line,
-.date-line {
-  margin: 4px 0 0 0;
-  color: #555;
-  font-size: 0.95rem;
+.date-line { /* Targets both company line and date line */
+  margin: 4px 0 0 0; /* Adds small spacing above and removes bottom spacing */
+  color: #555; /* Sets muted gray text color */
+  font-size: 0.95rem; /* Sets slightly smaller text size */
 }
 
 /* Mobile */
-@media (max-width: 768px) {
-  .experience-header {
-    align-items: center;
+@media (max-width: 768px) { /* Applies these styles on smaller screens */
+  .experience-header { /* Targets experience header row on mobile */
+    align-items: center; /* Vertically centers text and logo */
   }
 
-  .company-logo {
-    width: 56px;
+  .company-logo { /* Targets logo on mobile */
+    width: 56px; /* Makes logo smaller */
   }
 }
 
@@ -212,295 +212,295 @@ section#about {
 /* Education Section */
 /* ========================= */
 /* Education header layout */
-.education-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 20px;
+.education-header { /* Targets education header row layout */
+  display: flex; /* Uses flexbox for layout */
+  justify-content: space-between; /* Spaces text and logo apart */
+  align-items: flex-start; /* Aligns to top */
+  gap: 20px; /* Adds spacing between text and logo */
 }
 
 /* School logos */
-.school-logo {
-  width: 64px;
-  height: auto;
-  object-fit: contain;
-  border-radius: 8px;
-  margin-left: auto;
+.school-logo { /* Targets the school logo image */
+  width: 64px; /* Sets logo width */
+  height: auto; /* Keeps proportions */
+  object-fit: contain; /* Ensures logo fits fully */
+  border-radius: 8px; /* Rounds logo corners */
+  margin-left: auto; /* Pushes logo to the right */
 }
 
 /* Bullet list inside education card */
-.education-bullets {
-  margin-top: 12px;
-  padding-left: 20px;
+.education-bullets { /* Targets education bullet list container */
+  margin-top: 12px; /* Adds space above bullets */
+  padding-left: 20px; /* Indents bullets */
 }
 
 /* Education card */
-#education .education-item {
-  border: 2px solid #6ea6eb;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 8px;
-  background-color: #f4faff;
+#education .education-item { /* Targets .education-item inside #education section */
+  border: 2px solid #6ea6eb; /* Adds blue border */
+  padding: 20px; /* Adds inner spacing */
+  margin-bottom: 20px; /* Adds space between education cards */
+  border-radius: 8px; /* Rounds corners */
+  background-color: #f4faff; /* Sets light blue background */
 }
 
-#education h3 {
-  color: #333;
-  font-size: 1.5em;
-  margin-bottom: 6px;
+#education h3 { /* Targets h3 headings inside #education */
+  color: #333; /* Sets heading color */
+  font-size: 1.5em; /* Sets heading size */
+  margin-bottom: 6px; /* Slight spacing below heading */
 }
 
-#education p {
-  font-size: 1.05em;
-  line-height: 1.5;
-  margin: 2px 0;
+#education p { /* Targets paragraph text inside #education */
+  font-size: 1.05em; /* Sets paragraph font size */
+  line-height: 1.5; /* Sets line spacing */
+  margin: 2px 0; /* Tightens vertical margins */
 }
 
 /* Mobile */
-@media (max-width: 768px) {
-  .education-header {
-    flex-direction: column;
-    align-items: flex-start;
+@media (max-width: 768px) { /* Applies these styles on mobile */
+  .education-header { /* Targets the header row on mobile */
+    flex-direction: column; /* Stacks text and logo vertically */
+    align-items: flex-start; /* Aligns items left */
   }
 
-  .school-logo {
-    margin-top: 12px;
-    width: 52px;
+  .school-logo { /* Targets logo on mobile */
+    margin-top: 12px; /* Adds space above logo */
+    width: 52px; /* Makes logo smaller */
   }
 }
 
 /* ========================= */
 /* Projects */
 /* ========================= */
-.project iframe {
-  border: none;
-  border-radius: 10px;
+.project iframe { /* Targets iframes inside elements with class="project" */
+  border: none; /* Removes iframe border */
+  border-radius: 10px; /* Rounds iframe corners */
 }
 
 /* ========================= */
 /* Contact Section */
 /* ========================= */
-#contact {
-  text-align: center;
-  padding: 40px;
+#contact { /* Targets the contact section */
+  text-align: center; /* Centers contact content */
+  padding: 40px; /* Adds inner spacing */
 }
 
-#contact h2 {
-  font-size: 2rem;
-  color: #004c97;
+#contact h2 { /* Targets the h2 in contact section */
+  font-size: 2rem; /* Sets heading size */
+  color: #004c97; /* Sets heading color */
 }
 
-#contact p {
-  font-size: 1.1rem;
+#contact p { /* Targets paragraph text in contact section */
+  font-size: 1.1rem; /* Sets paragraph size */
 }
 
-.contact-links {
-  margin-top: 20px;
+.contact-links { /* Targets the container holding buttons/links */
+  margin-top: 20px; /* Adds spacing above the buttons */
 }
 
-.contact-btn {
-  display: inline-block;
-  padding: 12px 20px;
-  margin: 10px;
-  font-size: 18px;
-  font-weight: bold;
-  text-decoration: none;
-  color: white;
-  border-radius: 8px;
-  transition: 0.3s;
+.contact-btn { /* Targets contact button links */
+  display: inline-block; /* Allows padding and margin like a button */
+  padding: 12px 20px; /* Button padding */
+  margin: 10px; /* Space between buttons */
+  font-size: 18px; /* Text size */
+  font-weight: bold; /* Bold text */
+  text-decoration: none; /* Removes underline */
+  color: white; /* Text color */
+  border-radius: 8px; /* Rounded corners */
+  transition: 0.3s; /* Smooth hover transition */
 }
 
-.email-btn {
-  background-color: #4095eb;
-  color: white;
+.email-btn { /* Email button styling */
+  background-color: #4095eb; /* Sets email button background */
+  color: white; /* Sets email button text color */
 }
 
-.linkedin-btn {
-  background-color: #0077b5;
+.linkedin-btn { /* LinkedIn button styling */
+  background-color: #0077b5; /* Sets LinkedIn brand color */
 }
 
-.tripleten-btn {
-  background-color: #66b7e1;
-  color: white;
+.tripleten-btn { /* TripleTen button styling */
+  background-color: #66b7e1; /* Sets button background */
+  color: white; /* Sets button text color */
 }
 
-.contact-btn i {
-  margin-right: 8px;
+.contact-btn i { /* Targets icons inside buttons */
+  margin-right: 8px; /* Adds spacing between icon and text */
 }
 
-.contact-btn:hover {
-  opacity: 0.8;
+.contact-btn:hover { /* Hover effect for buttons */
+  opacity: 0.8; /* Slight fade on hover */
 }
 
 /* ========================= */
 /* Updates Page */
 /* ========================= */
-.updates-container {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+.updates-container { /* Container for updates list */
+  display: flex; /* Uses flexbox */
+  flex-direction: column; /* Stacks update cards vertically */
+  gap: 20px; /* Adds spacing between update cards */
 }
 
-.update-item {
-  border: 2px solid #6ea6eb;
-  padding: 20px;
-  border-radius: 8px;
-  background-color: #f4faff;
+.update-item { /* Individual update card */
+  border: 2px solid #6ea6eb; /* Blue border */
+  padding: 20px; /* Inner spacing */
+  border-radius: 8px; /* Rounded corners */
+  background-color: #f4faff; /* Light blue background */
 }
 
-.update-item h3 {
-  color: #333;
-  font-size: 1.5em;
-  margin-bottom: 10px;
-  margin-top: 0;
+.update-item h3 { /* Headings inside update cards */
+  color: #333; /* Text color */
+  font-size: 1.5em; /* Heading size */
+  margin-bottom: 10px; /* Space below heading */
+  margin-top: 0; /* Removes default top margin */
 }
 
-.update-tags {
-  margin-top: 10px;
+.update-tags { /* Container for update tags */
+  margin-top: 10px; /* Space above tags */
 }
 
-.update-tag {
-  display: inline-block;
-  background-color: #e6f1ff;
-  color: #004c97;
-  padding: 4px 10px;
-  border-radius: 20px;
-  font-size: 0.8rem;
-  margin-right: 6px;
-  margin-top: 6px;
+.update-tag { /* Individual tag pill */
+  display: inline-block; /* Allows padding and margin */
+  background-color: #e6f1ff; /* Tag background */
+  color: #004c97; /* Tag text color */
+  padding: 4px 10px; /* Tag padding */
+  border-radius: 20px; /* Makes pill shape */
+  font-size: 0.8rem; /* Tag text size */
+  margin-right: 6px; /* Space between tags */
+  margin-top: 6px; /* Space above tags when wrapping */
 }
 
 /* Updates photos: centered rows + centered last row */
-.update-photos {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 120px); /* tile size */
-  justify-content: center; /* centers each row including last */
-  gap: 16px;
-  margin-top: 40px;
-  padding-top: 20px;
-  border-top: 1px solid rgba(0, 0, 0, 0.08);
+.update-photos { /* Grid for update photos */
+  display: grid; /* Uses CSS grid */
+  grid-template-columns: repeat(auto-fit, 120px); /* tile size */ /* Creates as many 120px columns as will fit */
+  justify-content: center; /* centers each row including last */ /* Centers the whole grid row */
+  gap: 16px; /* Space between tiles */
+  margin-top: 40px; /* Space above photo grid */
+  padding-top: 20px; /* Space inside top of grid area */
+  border-top: 1px solid rgba(0, 0, 0, 0.08); /* Light divider line above photos */
 }
 
-.update-photos a {
-  position: relative;
-  display: block;
-  border-radius: 10px;
-  overflow: hidden;
-  aspect-ratio: 1 / 1;
+.update-photos a { /* Each photo link wrapper */
+  position: relative; /* Enables overlay positioning */
+  display: block; /* Makes the link behave like a block */
+  border-radius: 10px; /* Rounded corners */
+  overflow: hidden; /* Hides overflow so images crop cleanly */
+  aspect-ratio: 1 / 1; /* Makes each tile square */
 }
 
-.update-photos img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 10px;
-  display: block;
-  cursor: zoom-in;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+.update-photos img { /* Photo images inside tiles */
+  width: 100%; /* Fill tile width */
+  height: 100%; /* Fill tile height */
+  object-fit: cover; /* Crop image to fill square */
+  border-radius: 10px; /* Rounded corners */
+  display: block; /* Removes inline image gaps */
+  cursor: zoom-in; /* Shows zoom cursor */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover animation */
 }
 
-.update-photos a:hover img {
-  transform: scale(1.03);
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+.update-photos a:hover img { /* Hover effect on image */
+  transform: scale(1.03); /* Slight zoom on hover */
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15); /* Adds shadow on hover */
 }
 
-.update-photos a::after {
-  content: "Click to view";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.35);
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  font-size: 0.9rem;
-  font-weight: 600;
-  transition: opacity 0.2s ease;
+.update-photos a::after { /* Overlay text on tile */
+  content: "Click to view"; /* Overlay label text */
+  position: absolute; /* Positions overlay relative to tile */
+  inset: 0; /* Stretches overlay to cover entire tile */
+  background: rgba(0, 0, 0, 0.35); /* Semi-transparent dark overlay */
+  color: white; /* Overlay text color */
+  display: flex; /* Uses flexbox to center text */
+  align-items: center; /* Vertical center */
+  justify-content: center; /* Horizontal center */
+  opacity: 0; /* Hidden by default */
+  font-size: 0.9rem; /* Overlay text size */
+  font-weight: 600; /* Slightly bold overlay text */
+  transition: opacity 0.2s ease; /* Smooth fade-in */
 }
 
-.update-photos a:hover::after {
-  opacity: 1;
+.update-photos a:hover::after { /* Show overlay on hover */
+  opacity: 1; /* Makes overlay visible */
 }
 
-@media (max-width: 768px) {
-  .update-photos {
-    grid-template-columns: repeat(2, 1fr);
+@media (max-width: 768px) { /* Mobile update photo layout */
+  .update-photos { /* Targets photo grid on mobile */
+    grid-template-columns: repeat(2, 1fr); /* Two columns on mobile */
   }
 }
 
 /* ============================= */
 /* Skills, Tools & Certifications */
 /* ============================= */
-#skills-tools .skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1.5rem;
-  margin-top: 1.5rem;
+#skills-tools .skills-grid { /* Skills grid layout */
+  display: grid; /* Uses CSS grid */
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); /* Responsive columns */
+  gap: 1.5rem; /* Space between cards */
+  margin-top: 1.5rem; /* Space above grid */
 }
 
-#skills-tools .skill-category {
-  border: 2px solid #6ea6eb;
-  background-color: #f4faff;
-  padding: 20px;
-  border-radius: 8px;
+#skills-tools .skill-category { /* Individual skill card */
+  border: 2px solid #6ea6eb; /* Blue border */
+  background-color: #f4faff; /* Light background */
+  padding: 20px; /* Inner spacing */
+  border-radius: 8px; /* Rounded corners */
 }
 
-#skills-tools .skill-category h3 {
-  margin-top: 0;
-  font-size: 1.2rem;
+#skills-tools .skill-category h3 { /* Skill card heading */
+  margin-top: 0; /* Removes default top margin */
+  font-size: 1.2rem; /* Heading size */
 }
 
-#skills-tools .skill-category p {
-  margin: 0;
+#skills-tools .skill-category p { /* Skill card text */
+  margin: 0; /* Removes default paragraph margins */
 }
 
 /* Certifications: centered rows */
-#skills-tools .cert-images {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1.5rem;
-  margin-top: 1.25rem;
-  max-width: 1100px;
-  margin-left: auto;
-  margin-right: auto;
+#skills-tools .cert-images { /* Certifications container layout */
+  display: flex; /* Flex layout */
+  flex-wrap: wrap; /* Allows wrapping */
+  justify-content: center; /* Centers items */
+  gap: 1.5rem; /* Space between items */
+  margin-top: 1.25rem; /* Space above certifications */
+  max-width: 1100px; /* Limits width */
+  margin-left: auto; /* Centers container */
+  margin-right: auto; /* Centers container */
 }
 
-#skills-tools .cert-card {
-  width: 260px;
-  text-align: center;
+#skills-tools .cert-card { /* Individual certification card */
+  width: 260px; /* Fixed card width */
+  text-align: center; /* Centers text */
 }
 
-#skills-tools .cert-card img {
-  width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+#skills-tools .cert-card img { /* Certification image */
+  width: 100%; /* Image fills card width */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Subtle shadow */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Hover animation */
 }
 
-#skills-tools .cert-card img:hover {
-  transform: scale(1.03);
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+#skills-tools .cert-card img:hover { /* Hover effect on cert image */
+  transform: scale(1.03); /* Slight zoom */
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12); /* Stronger shadow */
 }
 
-#skills-tools .cert-card p {
-  margin-top: 0.6rem;
-  font-size: 0.95rem;
-  color: #333;
-  line-height: 1.4;
+#skills-tools .cert-card p { /* Certification caption text */
+  margin-top: 0.6rem; /* Space above caption */
+  font-size: 0.95rem; /* Caption text size */
+  color: #333; /* Caption color */
+  line-height: 1.4; /* Caption spacing */
 }
 
-#skills-tools .cert-images a {
-  text-decoration: none;
+#skills-tools .cert-images a { /* Links around certification images */
+  text-decoration: none; /* Removes underline */
 }
 
 /* ========================= */
 /* Footer */
 /* ========================= */
-footer {
-  text-align: center;
-  padding: 15px;
-  background-image: linear-gradient(to bottom, #6fb7ff, #004c97);
-  color: white;
-  margin-top: 100px;
+footer { /* Footer styling */
+  text-align: center; /* Centers footer content */
+  padding: 15px; /* Adds padding inside footer */
+  background-image: linear-gradient(to bottom, #6fb7ff, #004c97); /* Footer gradient background */
+  color: white; /* Footer text color */
+  margin-top: 100px; /* Space above footer */
 }
