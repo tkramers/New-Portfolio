@@ -202,6 +202,36 @@ section {
 /* ========================= */
 /* Education Section */
 /* ========================= */
+
+/* Education header layout */
+.education-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+/* School logos */
+.school-logo {
+  width: 64px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  margin-left: auto;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .education-header {
+    align-items: center;
+  }
+
+  .school-logo {
+    width: 52px;
+  }
+}
+
+
 #education .education-item {
   border: 2px solid #6ea6eb;
   padding: 20px;
