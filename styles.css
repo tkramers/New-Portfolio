@@ -122,6 +122,15 @@ section#about {
   font-size: 2rem;
 }
 
+/* Make homepage tiles the same height */
+.home-tile {
+  min-height: 360px;     /* tweak this number if needed */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
 /* Make Skills/Tools section wider than other sections */
 #skills-tools .skill-category p {
   font-size: 0.8rem;
