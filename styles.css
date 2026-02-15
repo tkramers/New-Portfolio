@@ -109,7 +109,7 @@ section {
 /* About Me: reset to default section sizing */
 section#about {
   width: 80%;
-  max-width: 1200px; /* optional — keeps it from getting too wide on large screens */
+  max-width: 750px; /* optional — keeps it from getting too wide on large screens */
   margin: 40px auto;
 }
 
