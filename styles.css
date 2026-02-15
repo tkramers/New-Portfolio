@@ -146,6 +146,45 @@ section {
 }
 
 /* Experience Section */
+
+/* Experience layout with logo */
+.experience-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.company-logo {
+  width: 54px;
+  height: 54px;
+  border-radius: 10px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.experience-title h3 {
+  margin: 0;
+}
+
+.company-line,
+.date-line {
+  margin: 4px 0 0 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .experience-header {
+    align-items: center;
+  }
+
+  .company-logo {
+    width: 46px;
+    height: 46px;
+  }
+}
+
 .experience-item {
   border: 2px solid #6ea6eb;
   padding: 20px;
