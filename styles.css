@@ -132,7 +132,7 @@ section#about {
 
 /* Limits width of paragraph text for readability */
 #about-me p {
-  max-width: 750px;          /* Keeps text from being too wide */
+  max-width: 1000px;          /* Keeps text from being too wide */
   margin: 0 auto;            /* Centers paragraph */
   line-height: 1.7;          /* Increases line spacing */
 }
