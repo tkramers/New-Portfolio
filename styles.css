@@ -10,6 +10,8 @@ html {
   scroll-behavior: smooth;
 }
 
+
+
 /* Sets global font, removes default spacing, and sets base colors */
 body {
   font-family: "Poppins", sans-serif;  /* Main site font */
