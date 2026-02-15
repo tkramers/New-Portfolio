@@ -107,12 +107,13 @@ section {
 }
 
 /* About Me ONLY (homepage section) */
-#about {
-  width: 98%;
-  max-width: 1400px;
+/* About Me: make the card wider */
+section#about {
+  width: calc(100% - 60px); /* full width minus side space */
+  max-width: none;
   margin: 40px auto;
-  text-align: center;
 }
+
 
 #about-me p {
   max-width: 750px;
