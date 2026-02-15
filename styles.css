@@ -1,7 +1,9 @@
 /* Import Poppins Font */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
+/* ========================= */
 /* General Styles */
+/* ========================= */
 html {
   scroll-behavior: smooth;
 }
@@ -36,7 +38,9 @@ h3 {
   margin-bottom: 10px;
 }
 
+/* ========================= */
 /* Header */
+/* ========================= */
 header {
   text-align: center;
   background-image: linear-gradient(to bottom, #004c97, #6fb7ff);
@@ -64,13 +68,12 @@ header p {
   box-shadow: 1px 10px 30px white;
 }
 
+/* ========================= */
 /* Navigation */
+/* ========================= */
 nav {
   position: relative;
   z-index: 9999;
-}
-
-nav {
   text-align: center;
   background-image: linear-gradient(to bottom, #346ea7, #004c97);
   padding: 15px 0;
@@ -89,7 +92,9 @@ nav a:hover {
   color: #ffcc00;
 }
 
-/* Sections (RESET to normal so pages aren't messed up) */
+/* ========================= */
+/* Sections */
+/* ========================= */
 section {
   width: 80%;
   margin: 40px auto;
@@ -99,8 +104,7 @@ section {
   border-radius: 10px;
 }
 
-
-/* About Me ONLY: make this one wider + centered text */
+/* About Me ONLY (homepage section) */
 #about {
   width: 92%;
   max-width: 1200px;
@@ -145,25 +149,36 @@ section {
   }
 }
 
+/* ========================= */
 /* Experience Section */
+/* ========================= */
+.experience-item {
+  border: 2px solid #6ea6eb;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background-color: #f4faff;
+}
 
-/* Experience layout with logo */
+/* Header row inside each experience item */
 .experience-header {
   display: flex;
+  justify-content: space-between; /* pushes logo to far right */
   align-items: flex-start;
-  gap: 16px;
+  gap: 20px;
+}
+
+.experience-text {
+  flex: 1;
 }
 
 .company-logo {
-  width: 54px;
-  height: 54px;
+  width: 70px;        /* adjust if you want */
+  height: auto;
   border-radius: 10px;
-  object-fit: cover;
+  object-fit: contain;
   flex-shrink: 0;
-}
-
-.experience-title h3 {
-  margin: 0;
+  margin-left: auto;  /* ensures it hugs the right edge */
 }
 
 .company-line,
@@ -180,20 +195,13 @@ section {
   }
 
   .company-logo {
-    width: 46px;
-    height: 46px;
+    width: 56px;
   }
 }
 
-.experience-item {
-  border: 2px solid #6ea6eb;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 8px;
-  background-color: #f4faff;
-}
-
+/* ========================= */
 /* Education Section */
+/* ========================= */
 #education .education-item {
   border: 2px solid #6ea6eb;
   padding: 20px;
@@ -208,33 +216,24 @@ section {
   margin-bottom: 10px;
 }
 
+/* NOTE: This flex layout will put degree on left and date/location on right ONLY if your <p> is 1 line.
+   If your <p> has <br>, flex can behave weird. If it looks off, tell me and I’ll adjust this. */
 #education p {
   font-size: 1.1em;
   line-height: 1.6;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
-.subtext {
-  font-size: 0.9em;
-  color: #555;
-  margin-top: -8px;
-}
-
-.date {
-  float: right;
-  font-weight: normal;
-  color: #555;
-}
-
+/* ========================= */
 /* Projects */
+/* ========================= */
 .project iframe {
   border: none;
   border-radius: 10px;
 }
 
+/* ========================= */
 /* Contact Section */
+/* ========================= */
 #contact {
   text-align: center;
   padding: 40px;
@@ -287,7 +286,9 @@ section {
   opacity: 0.8;
 }
 
+/* ========================= */
 /* Updates Page */
+/* ========================= */
 .updates-container {
   display: flex;
   flex-direction: column;
@@ -334,7 +335,6 @@ section {
   border-top: 1px solid rgba(0, 0, 0, 0.08);
 }
 
-/* Square clickable photo tiles */
 .update-photos a {
   position: relative;
   display: block;
@@ -386,7 +386,6 @@ section {
 /* ============================= */
 /* Skills, Tools & Certifications */
 /* ============================= */
-
 #skills-tools .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -410,7 +409,7 @@ section {
   margin: 0;
 }
 
-/* Certifications: centered rows + centered last row */
+/* Certifications: centered rows */
 #skills-tools .cert-images {
   display: flex;
   flex-wrap: wrap;
@@ -450,7 +449,9 @@ section {
   text-decoration: none;
 }
 
+/* ========================= */
 /* Footer */
+/* ========================= */
 footer {
   text-align: center;
   padding: 15px;
