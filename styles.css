@@ -106,11 +106,13 @@ section {
 
 /* About Me ONLY (homepage section) */
 /* About Me: make the card wider */
+/* About Me: reset to default section sizing */
 section#about {
-  width: calc(100% - 60px); /* full width minus side space */
-  max-width: none;
+  width: 80%;
+  max-width: 1200px; /* optional — keeps it from getting too wide on large screens */
   margin: 40px auto;
 }
+
 
 #about-me p {
   max-width: 750px;
