@@ -111,7 +111,7 @@ section {
 /* About Me: make the card wider */
 /* About Me: reset to default section sizing */
 section#about {
-  width: 80%;
+  width: 90%;
   max-width: 1000px; /* optional — keeps it from getting too wide on large screens */
   margin: 40px auto;
 }
