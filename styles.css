@@ -220,18 +220,13 @@ section {
   margin-left: auto;
 }
 
-/* Mobile */
-@media (max-width: 768px) {
-  .education-header {
-    align-items: center;
-  }
-
-  .school-logo {
-    width: 52px;
-  }
+/* Bullet list inside education card */
+.education-bullets {
+  margin-top: 12px;
+  padding-left: 20px;
 }
 
-
+/* Education card */
 #education .education-item {
   border: 2px solid #6ea6eb;
   padding: 20px;
@@ -243,14 +238,26 @@ section {
 #education h3 {
   color: #333;
   font-size: 1.5em;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
 }
 
-/* NOTE: This flex layout will put degree on left and date/location on right ONLY if your <p> is 1 line.
-   If your <p> has <br>, flex can behave weird. If it looks off, tell me and I’ll adjust this. */
 #education p {
-  font-size: 1.1em;
-  line-height: 1.6;
+  font-size: 1.05em;
+  line-height: 1.5;
+  margin: 2px 0;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .education-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .school-logo {
+    margin-top: 12px;
+    width: 52px;
+  }
 }
 
 /* ========================= */
