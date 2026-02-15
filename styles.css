@@ -1,520 +1,189 @@
-/* Import Poppins Font */
+/* Import Poppins Font from Google Fonts so the site uses this font family */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 /* ========================= */
 /* General Styles */
 /* ========================= */
+
+/* Enables smooth scrolling when clicking anchor links */
 html {
   scroll-behavior: smooth;
 }
 
-
-
-
+/* Sets global font, removes default browser spacing, and sets base colors */
 body {
-  font-family: "Poppins", sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #ffffff;
-  color: #333;
+  font-family: "Poppins", sans-serif;   /* Sets main font for entire site */
+  margin: 0;                            /* Removes default browser margin */
+  padding: 0;                           /* Removes default browser padding */
+  background-color: #ffffff;            /* Sets page background color */
+  color: #333;                          /* Sets default text color */
 }
 
+/* Controls spacing between lines in paragraphs for readability */
 p {
   line-height: 1.6;
 }
 
+/* Styles unordered lists with bullets and left indentation */
 ul {
-  list-style-type: disc;
-  margin-left: 20px;
+  list-style-type: disc;   /* Uses bullet points */
+  margin-left: 20px;       /* Indents list from the left */
 }
 
+/* Styles section headings */
 h2 {
-  color: #004c97;
-  border-bottom: 3px solid;
-  border-image: linear-gradient(to right, #004c97, #6fb7ff) 1;
-  padding-bottom: 10px;
+  color: #004c97;                                                  /* Sets heading color */
+  border-bottom: 3px solid;                                        /* Adds bottom border */
+  border-image: linear-gradient(to right, #004c97, #6fb7ff) 1;     /* Makes border gradient */
+  padding-bottom: 10px;                                            /* Adds space below text */
 }
 
+/* Styles subheadings */
 h3 {
-  color: #333;
-  font-size: 1.5em;
-  margin-bottom: 10px;
+  color: #333;            /* Sets text color */
+  font-size: 1.5em;      /* Increases size */
+  margin-bottom: 10px;  /* Adds space below heading */
 }
 
 /* ========================= */
 /* Header */
 /* ========================= */
+
+/* Styles the top header section */
 header {
-  text-align: center;
-  background-image: linear-gradient(to bottom, #004c97, #6fb7ff);
-  color: white;
-  padding: 30px 20px;
+  text-align: center;                                               /* Centers header content */
+  background-image: linear-gradient(to bottom, #004c97, #6fb7ff);   /* Gradient background */
+  color: white;                                                     /* White text */
+  padding: 30px 20px;                                               /* Inner spacing */
 }
 
+/* Styles main name heading */
 header h1 {
-  margin: 10px 0;
-  font-size: 2.5rem;
+  margin: 10px 0;        /* Vertical spacing */
+  font-size: 2.5rem;    /* Large name text */
 }
 
+/* Adds spacing above profile image */
 header img {
   margin-top: 15px;
 }
 
+/* Styles subtitle text under name */
 header p {
-  font-size: 1.2rem;
-  font-weight: bold;
+  font-size: 1.2rem;    /* Slightly larger text */
+  font-weight: bold;   /* Makes text bold */
 }
 
-/* Profile Photo */
+/* Profile photo styling */
 .profile-pic {
-  border-radius: 20px;
-  box-shadow: 1px 10px 30px white;
+  border-radius: 20px;                 /* Rounds corners of image */
+  box-shadow: 1px 10px 30px white;     /* Adds glow/shadow effect */
 }
 
 /* ========================= */
 /* Navigation */
 /* ========================= */
+
+/* Styles the navigation bar container */
 nav {
-  position: relative;
-  z-index: 9999;
-  text-align: center;
-  background-image: linear-gradient(to bottom, #346ea7, #004c97);
-  padding: 15px 0;
+  position: relative;                                               /* Allows layering */
+  z-index: 9999;                                                    /* Keeps nav above other elements */
+  text-align: center;                                               /* Centers nav links */
+  background-image: linear-gradient(to bottom, #346ea7, #004c97);   /* Gradient background */
+  padding: 15px 0;                                                  /* Vertical padding */
 }
 
+/* Styles each navigation link */
 nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 20px;
-  font-size: 1.2rem;
-  font-weight: bold;
-  transition: 0.3s;
+  color: white;             /* Link color */
+  text-decoration: none;   /* Removes underline */
+  margin: 0 20px;          /* Spacing between links */
+  font-size: 1.2rem;       /* Link size */
+  font-weight: bold;       /* Bold links */
+  transition: 0.3s;        /* Smooth hover transition */
 }
 
+/* Hover color for navigation links */
 nav a:hover {
-  color: #ffcc00;
+  color: #ffcc00;          /* Changes color on hover */
 }
 
 /* ========================= */
 /* Sections */
 /* ========================= */
+
+/* Styles all main content sections */
 section {
-  width: 80%;
-  margin: 40px auto;
-  padding: 20px;
-  background: white;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+  width: 80%;                                   /* Sets section width */
+  margin: 40px auto;                            /* Centers section on page */
+  padding: 20px;                                /* Inner spacing */
+  background: white;                            /* White background */
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);   /* Soft shadow */
+  border-radius: 10px;                          /* Rounded corners */
 }
 
 /* About Me ONLY (homepage section) */
-/* About Me: make the card wider */
-/* About Me: reset to default section sizing */
+/* Overrides default section width for About Me */
 section#about {
-  width: 90%;
-  max-width: 1000px; /* optional — keeps it from getting too wide on large screens */
-  margin: 40px auto;
+  width: 100%;                 /* Makes About Me wider than other sections */
+  max-width: 1200px;         /* Prevents it from getting too wide on large screens */
+  margin: 40px auto;         /* Centers the section */
 }
 
-
+/* Limits width of paragraph text for readability */
 #about-me p {
-  max-width: 750px;
-  margin: 0 auto;
-  line-height: 1.7;
+  max-width: 750px;          /* Keeps text from being too wide */
+  margin: 0 auto;            /* Centers paragraph */
+  line-height: 1.7;          /* Increases line spacing */
 }
 
+/* Styles About Me heading */
 .about-me-header {
-  font-size: 2rem;
+  font-size: 2rem;           /* Makes heading larger */
 }
 
-/* Make homepage tiles the same height */
+/* Makes homepage tiles the same height */
 .home-tile {
-  min-height: 360px;     /* tweak this number if needed */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  min-height: 360px;         /* Forces consistent tile height */
+  display: flex;            /* Enables flexbox layout */
+  flex-direction: column;   /* Stacks content vertically */
+  justify-content: center;  /* Centers content vertically */
 }
 
-
-/* Make Skills/Tools section wider than other sections */
+/* Styles text inside skill category cards */
 #skills-tools .skill-category p {
-  font-size: 0.8rem;
-  line-height: 1.45;
+  font-size: 0.8rem;        /* Makes skill text smaller */
+  line-height: 1.45;        /* Adjusts line spacing */
 }
 
+/* Styles headings inside skill cards */
 #skills-tools .skill-category h3 {
-  font-size: 1.15rem;
+  font-size: 1.15rem;       /* Slightly smaller headings */
 }
 
+/* Makes Skills section wider */
 #skills-tools {
-  width: 100%;
-  max-width: 1200px;
-  margin: 40px auto;
-  padding: 40px 30px;
+  width: 100%;              /* Full width */
+  max-width: 1200px;       /* Caps max width */
+  margin: 40px auto;       /* Centers section */
+  padding: 40px 30px;      /* Inner spacing */
 }
 
-/* Responsive section sizing */
+/* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
   section {
-    width: 92%;
-    margin: 25px auto;
-    padding: 18px;
+    width: 92%;             /* Makes sections wider on small screens */
+    margin: 25px auto;     /* Reduces vertical spacing */
+    padding: 18px;         /* Reduces padding */
   }
 
   #about {
-    width: 92%;
+    width: 92%;             /* Matches mobile width */
     padding: 18px;
   }
 
   #skills-tools {
-    width: 92%;
+    width: 92%;             /* Keeps skills section responsive */
     padding: 28px 18px;
   }
-}
-
-/* ========================= */
-/* Experience Section */
-/* ========================= */
-.experience-item {
-  border: 2px solid #6ea6eb;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 8px;
-  background-color: #f4faff;
-}
-
-/* Header row inside each experience item */
-.experience-header {
-  display: flex;
-  justify-content: space-between; /* pushes logo to far right */
-  align-items: flex-start;
-  gap: 20px;
-}
-
-.experience-text {
-  flex: 1;
-}
-
-.company-logo {
-  width: 70px; /* adjust if you want */
-  height: auto;
-  border-radius: 10px;
-  object-fit: contain;
-  flex-shrink: 0;
-  margin-left: auto; /* ensures it hugs the right edge */
-}
-
-.company-line,
-.date-line {
-  margin: 4px 0 0 0;
-  color: #555;
-  font-size: 0.95rem;
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-  .experience-header {
-    align-items: center;
-  }
-
-  .company-logo {
-    width: 56px;
-  }
-}
-
-/* ========================= */
-/* Education Section */
-/* ========================= */
-/* Education header layout */
-.education-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 20px;
-}
-
-/* School logos */
-.school-logo {
-  width: 64px;
-  height: auto;
-  object-fit: contain;
-  border-radius: 8px;
-  margin-left: auto;
-}
-
-/* Bullet list inside education card */
-.education-bullets {
-  margin-top: 12px;
-  padding-left: 20px;
-}
-
-/* Education card */
-#education .education-item {
-  border: 2px solid #6ea6eb;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 8px;
-  background-color: #f4faff;
-}
-
-#education h3 {
-  color: #333;
-  font-size: 1.5em;
-  margin-bottom: 6px;
-}
-
-#education p {
-  font-size: 1.05em;
-  line-height: 1.5;
-  margin: 2px 0;
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-  .education-header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .school-logo {
-    margin-top: 12px;
-    width: 52px;
-  }
-}
-
-/* ========================= */
-/* Projects */
-/* ========================= */
-.project iframe {
-  border: none;
-  border-radius: 10px;
-}
-
-/* ========================= */
-/* Contact Section */
-/* ========================= */
-#contact {
-  text-align: center;
-  padding: 40px;
-}
-
-#contact h2 {
-  font-size: 2rem;
-  color: #004c97;
-}
-
-#contact p {
-  font-size: 1.1rem;
-}
-
-.contact-links {
-  margin-top: 20px;
-}
-
-.contact-btn {
-  display: inline-block;
-  padding: 12px 20px;
-  margin: 10px;
-  font-size: 18px;
-  font-weight: bold;
-  text-decoration: none;
-  color: white;
-  border-radius: 8px;
-  transition: 0.3s;
-}
-
-.email-btn {
-  background-color: #4095eb;
-  color: white;
-}
-
-.linkedin-btn {
-  background-color: #0077b5;
-}
-
-.tripleten-btn {
-  background-color: #66b7e1;
-  color: white;
-}
-
-.contact-btn i {
-  margin-right: 8px;
-}
-
-.contact-btn:hover {
-  opacity: 0.8;
-}
-
-/* ========================= */
-/* Updates Page */
-/* ========================= */
-.updates-container {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.update-item {
-  border: 2px solid #6ea6eb;
-  padding: 20px;
-  border-radius: 8px;
-  background-color: #f4faff;
-}
-
-.update-item h3 {
-  color: #333;
-  font-size: 1.5em;
-  margin-bottom: 10px;
-  margin-top: 0;
-}
-
-.update-tags {
-  margin-top: 10px;
-}
-
-.update-tag {
-  display: inline-block;
-  background-color: #e6f1ff;
-  color: #004c97;
-  padding: 4px 10px;
-  border-radius: 20px;
-  font-size: 0.8rem;
-  margin-right: 6px;
-  margin-top: 6px;
-}
-
-/* Updates photos: centered rows + centered last row */
-.update-photos {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 120px); /* tile size */
-  justify-content: center; /* centers each row including last */
-  gap: 16px;
-  margin-top: 40px;
-  padding-top: 20px;
-  border-top: 1px solid rgba(0, 0, 0, 0.08);
-}
-
-.update-photos a {
-  position: relative;
-  display: block;
-  border-radius: 10px;
-  overflow: hidden;
-  aspect-ratio: 1 / 1;
-}
-
-.update-photos img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 10px;
-  display: block;
-  cursor: zoom-in;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.update-photos a:hover img {
-  transform: scale(1.03);
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
-}
-
-.update-photos a::after {
-  content: "Click to view";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.35);
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  font-size: 0.9rem;
-  font-weight: 600;
-  transition: opacity 0.2s ease;
-}
-
-.update-photos a:hover::after {
-  opacity: 1;
-}
-
-@media (max-width: 768px) {
-  .update-photos {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* ============================= */
-/* Skills, Tools & Certifications */
-/* ============================= */
-#skills-tools .skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1.5rem;
-  margin-top: 1.5rem;
-}
-
-#skills-tools .skill-category {
-  border: 2px solid #6ea6eb;
-  background-color: #f4faff;
-  padding: 20px;
-  border-radius: 8px;
-}
-
-#skills-tools .skill-category h3 {
-  margin-top: 0;
-  font-size: 1.2rem;
-}
-
-#skills-tools .skill-category p {
-  margin: 0;
-}
-
-/* Certifications: centered rows */
-#skills-tools .cert-images {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1.5rem;
-  margin-top: 1.25rem;
-  max-width: 1100px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#skills-tools .cert-card {
-  width: 260px;
-  text-align: center;
-}
-
-#skills-tools .cert-card img {
-  width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-#skills-tools .cert-card img:hover {
-  transform: scale(1.03);
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
-}
-
-#skills-tools .cert-card p {
-  margin-top: 0.6rem;
-  font-size: 0.95rem;
-  color: #333;
-  line-height: 1.4;
-}
-
-#skills-tools .cert-images a {
-  text-decoration: none;
-}
-
-/* ========================= */
-/* Footer */
-/* ========================= */
-footer {
-  text-align: center;
-  padding: 15px;
-  background-image: linear-gradient(to bottom, #6fb7ff, #004c97);
-  color: white;
-  margin-top: 100px;
 }
