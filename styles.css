@@ -123,6 +123,17 @@ section {
 }
 
 /* Make Skills/Tools section wider than other sections */
+
+#skills-tools .skill-category p {
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+
+#skills-tools .skill-category h3 {
+  font-size: 1.15rem;
+}
+
+
 #skills-tools {
   width: 100%;
   max-width: 1200px;
