@@ -467,17 +467,15 @@ section#about { /* Targets only the section with id="about" */
 }
 
 #skills-tools .cert-card { /* Individual certification card */
-  width: 120px;
-  text-align: center;
+  width: 260px; /* Fixed card width */
+  text-align: center; /* Centers text */
 }
 
-#skills-tools .cert-card img {
-  width: 120px;
-  height: 85px;
-  object-fit: cover;
-  border-radius: 6px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+#skills-tools .cert-card img { /* Certification image */
+  width: 100%; /* Image fills card width */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Subtle shadow */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Hover animation */
 }
 
 #skills-tools .cert-card img:hover { /* Hover effect on cert image */
@@ -487,7 +485,7 @@ section#about { /* Targets only the section with id="about" */
 
 #skills-tools .cert-card p { /* Certification caption text */
   margin-top: 0.6rem; /* Space above caption */
-  font-size: 0.75rem; /* Caption text size */
+  font-size: 0.95rem; /* Caption text size */
   color: #333; /* Caption color */
   line-height: 1.4; /* Caption spacing */
 }
